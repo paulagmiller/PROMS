@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"8CA26ED3917C225463E04DCA2BA41BFC">
+		["MD5-CAM-1.0.1"] = <"372e7532b5c8cce125cf201061a9d093">
 		["build_uid"] = <"542f9d96-44f6-4150-903b-cd3846108075">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -326,7 +326,7 @@ ontology
 				["at0004"] = <
 					text = <"1 Urine leakage">
 					description = <"Patient reported statement about frequency of urine leakage in past 4 weeks.">
-					comment = <"Orinal questionnaire question: Over the past 4 weeks, how often have you leaked urine?">
+					comment = <"Oriaire question: Over the past 4 weeks, how often have you leaked urine?">
 				>
 				["at0005"] = <
 					text = <"More than once a day">
