@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"E62D896E2577FA727C75A9EFFD7CA63E">
+		["MD5-CAM-1.0.1"] = <"d77515d4eadd73f5c3d0cb8fa95f3cb5">
 		["build_uid"] = <"feed3fab-2d92-470b-a6c9-f19499a58c8b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -148,7 +148,7 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Class code">
-					description = <"A high-level document class code, normally selected from a valueset provided by the IHE-XDS Affinity Domain.">
+					description = <"A high-level document class code, normally selected from a valueset provided by the IHE-XDS Affinity Domain. t">
 					comment = <"For example: Report, Summary, Images, Plan, Patient Preferences, Workflow.
 These codes are specific to an XDS Affinity Domain.">
 				>
