@@ -1,0 +1,1159 @@
+archetype (adl_version=2.0.6; rm_release=1.1.0; generated; uid=f1d39778-dc98-43ae-b133-67199ad85047; build_uid=9eea42c8-811e-3426-9b03-85f283735660)
+    openEHR-EHR-OBSERVATION.ichom_lpc_epic_26.v0.0.1-alpha
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2016-08-05">
+        ["name"] = <"Hildegard Franke">
+        ["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+        ["email"] = <"hildi@freshehr.com">
+    >
+    original_namespace = <"uk.org.clinicalmodels">
+    original_publisher = <"UK Clinical Models">
+    lifecycle_state = <"in_development">
+    custodian_namespace = <"uk.org.clinicalmodels">
+    custodian_organisation = <"UK Clinical Models">
+    copyright = <"© Clinical Models UK">
+    licence = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+    references = <
+        ["1"] = <"EPIC-26  The Expanded Prostate Cancer Index Composite Short Form, cited 05-Aug-2016  https://medicine.umich.edu/sites/default/files/content/downloads/EPIC%20Short%20Form_0.pdf">
+    >
+    other_details = <
+        ["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+        ["MD5-CAM-1.0.1"] = <"8CA26ED3917C225463E04DCA2BA41BFC">
+    >
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"Designed to capture questionnaire and score information for the EPIC-26 (Expanded Prostate Cancer Index Composite) measuring quality of life issues in patients with prostrate cancer.">
+            keywords = <"EPIC", "EPIC-26", "prostate", "cancer", "index", "questionnaire", "score">
+            use = <"For use in care settings where patients with prostate cancer are managed. The archetype is intended to capture patient responses to the EPIC-26 questions and record the overall score.">
+            copyright = <"© Clinical Models UK">
+        >
+    >
+
+definition
+    OBSERVATION[id1] matches {    -- ICHOM LPC EPIC-26 Questionnaire
+        data matches {
+            HISTORY[id2] matches {    -- Event Series
+                events cardinality matches {1..*; unordered} matches {
+                    POINT_EVENT[id3] occurrences matches {0..1} matches {    -- Point in time
+                        data matches {
+                            ITEM_TREE[id4] matches {    -- Tree
+                                items cardinality matches {0..*; unordered} matches {
+                                    ELEMENT[id5] occurrences matches {0..1} matches {    -- 1 Urine leakage
+                                        value matches {
+                                            DV_ORDINAL[id9026] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at6]}],
+                                                    [{2}, {[at7]}],
+                                                    [{3}, {[at8]}],
+                                                    [{4}, {[at9]}],
+                                                    [{5}, {[at10]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id11] occurrences matches {0..1} matches {    -- 2 Urinary control
+                                        value matches {
+                                            DV_ORDINAL[id9027] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at12]}],
+                                                    [{2}, {[at13]}],
+                                                    [{3}, {[at14]}],
+                                                    [{4}, {[at15]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] occurrences matches {0..1} matches {    -- 3 Pads or adult diapers
+                                        value matches {
+                                            DV_ORDINAL[id9028] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at17]}],
+                                                    [{1}, {[at18]}],
+                                                    [{2}, {[at19]}],
+                                                    [{3}, {[at20]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id21] occurrences matches {0..1} matches {    -- 4a Dripping or leaking urine
+                                        value matches {
+                                            DV_ORDINAL[id9029] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at22]}],
+                                                    [{1}, {[at23]}],
+                                                    [{2}, {[at24]}],
+                                                    [{3}, {[at25]}],
+                                                    [{4}, {[at26]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id27] occurrences matches {0..1} matches {    -- 4b Pain or burning on urination
+                                        value matches {
+                                            DV_ORDINAL[id9030] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at28]}],
+                                                    [{1}, {[at29]}],
+                                                    [{2}, {[at30]}],
+                                                    [{3}, {[at31]}],
+                                                    [{4}, {[at32]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id33] occurrences matches {0..1} matches {    -- 4c Bleeding with urination
+                                        value matches {
+                                            DV_ORDINAL[id9031] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at34]}],
+                                                    [{1}, {[at35]}],
+                                                    [{2}, {[at36]}],
+                                                    [{3}, {[at37]}],
+                                                    [{4}, {[at38]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id39] occurrences matches {0..1} matches {    -- 4d Weak urine stream or incomplete emptying
+                                        value matches {
+                                            DV_ORDINAL[id9032] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at40]}],
+                                                    [{1}, {[at41]}],
+                                                    [{2}, {[at42]}],
+                                                    [{3}, {[at43]}],
+                                                    [{4}, {[at44]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id45] occurrences matches {0..1} matches {    -- 4e Need to urinate frequently during day
+                                        value matches {
+                                            DV_ORDINAL[id9033] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at46]}],
+                                                    [{1}, {[at47]}],
+                                                    [{2}, {[at48]}],
+                                                    [{3}, {[at49]}],
+                                                    [{4}, {[at50]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id51] occurrences matches {0..1} matches {    -- 5 Overall urinary function
+                                        value matches {
+                                            DV_ORDINAL[id9034] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at52]}],
+                                                    [{2}, {[at53]}],
+                                                    [{3}, {[at54]}],
+                                                    [{4}, {[at55]}],
+                                                    [{5}, {[at56]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id57] occurrences matches {0..1} matches {    -- 6a Urgency to have bowel movement
+                                        value matches {
+                                            DV_ORDINAL[id9035] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at58]}],
+                                                    [{1}, {[at59]}],
+                                                    [{2}, {[at60]}],
+                                                    [{3}, {[at61]}],
+                                                    [{4}, {[at62]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id63] occurrences matches {0..1} matches {    -- 6b Increased frequency of bowel movements
+                                        value matches {
+                                            DV_ORDINAL[id9036] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at64]}],
+                                                    [{1}, {[at65]}],
+                                                    [{2}, {[at66]}],
+                                                    [{3}, {[at67]}],
+                                                    [{4}, {[at68]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id69] occurrences matches {0..1} matches {    -- 6c Losing control of stools
+                                        value matches {
+                                            DV_ORDINAL[id9037] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at70]}],
+                                                    [{1}, {[at71]}],
+                                                    [{2}, {[at72]}],
+                                                    [{3}, {[at73]}],
+                                                    [{4}, {[at74]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id75] occurrences matches {0..1} matches {    -- 6d Bloody stools
+                                        value matches {
+                                            DV_ORDINAL[id9038] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at76]}],
+                                                    [{1}, {[at77]}],
+                                                    [{2}, {[at78]}],
+                                                    [{3}, {[at79]}],
+                                                    [{4}, {[at80]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id81] occurrences matches {0..1} matches {    -- 6e Abdominal/pelvic/rectal pain
+                                        value matches {
+                                            DV_ORDINAL[id9039] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at82]}],
+                                                    [{1}, {[at83]}],
+                                                    [{2}, {[at84]}],
+                                                    [{3}, {[at85]}],
+                                                    [{4}, {[at86]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id87] occurrences matches {0..1} matches {    -- 7 Overall bowel habits
+                                        value matches {
+                                            DV_ORDINAL[id9040] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at88]}],
+                                                    [{2}, {[at89]}],
+                                                    [{3}, {[at90]}],
+                                                    [{4}, {[at91]}],
+                                                    [{5}, {[at92]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id93] occurrences matches {0..1} matches {    -- 8a Ability to have erection
+                                        value matches {
+                                            DV_ORDINAL[id9041] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at94]}],
+                                                    [{2}, {[at95]}],
+                                                    [{3}, {[at96]}],
+                                                    [{4}, {[at97]}],
+                                                    [{5}, {[at98]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id99] occurrences matches {0..1} matches {    -- 8b Ability to reach orgasm
+                                        value matches {
+                                            DV_ORDINAL[id9042] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at100]}],
+                                                    [{2}, {[at101]}],
+                                                    [{3}, {[at102]}],
+                                                    [{4}, {[at103]}],
+                                                    [{5}, {[at104]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id105] occurrences matches {0..1} matches {    -- 9 Quality of erections
+                                        value matches {
+                                            DV_ORDINAL[id9043] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at106]}],
+                                                    [{2}, {[at107]}],
+                                                    [{3}, {[at108]}],
+                                                    [{4}, {[at109]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id110] occurrences matches {0..1} matches {    -- 10 Frequency of erections
+                                        value matches {
+                                            DV_ORDINAL[id9044] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at111]}],
+                                                    [{2}, {[at112]}],
+                                                    [{3}, {[at113]}],
+                                                    [{4}, {[at114]}],
+                                                    [{5}, {[at115]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id116] occurrences matches {0..1} matches {    -- 11 Overall sexual ability
+                                        value matches {
+                                            DV_ORDINAL[id9045] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at117]}],
+                                                    [{2}, {[at118]}],
+                                                    [{3}, {[at119]}],
+                                                    [{4}, {[at120]}],
+                                                    [{5}, {[at121]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id122] occurrences matches {0..1} matches {    -- 12 Sexual function problem
+                                        value matches {
+                                            DV_ORDINAL[id9046] matches {
+                                                [value, symbol] matches {
+                                                    [{1}, {[at123]}],
+                                                    [{2}, {[at124]}],
+                                                    [{3}, {[at125]}],
+                                                    [{4}, {[at126]}],
+                                                    [{5}, {[at127]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id128] occurrences matches {0..1} matches {    -- 13a Hot flushes
+                                        value matches {
+                                            DV_ORDINAL[id9047] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at133]}],
+                                                    [{1}, {[at134]}],
+                                                    [{2}, {[at135]}],
+                                                    [{3}, {[at136]}],
+                                                    [{4}, {[at137]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id129] occurrences matches {0..1} matches {    -- 13b Breast tenderness/enlargement
+                                        value matches {
+                                            DV_ORDINAL[id9048] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at138]}],
+                                                    [{1}, {[at139]}],
+                                                    [{2}, {[at140]}],
+                                                    [{3}, {[at141]}],
+                                                    [{4}, {[at142]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id130] occurrences matches {0..1} matches {    -- 13c Feeling depressed
+                                        value matches {
+                                            DV_ORDINAL[id9049] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at143]}],
+                                                    [{1}, {[at144]}],
+                                                    [{2}, {[at145]}],
+                                                    [{3}, {[at146]}],
+                                                    [{4}, {[at147]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id131] occurrences matches {0..1} matches {    -- 13d Lack of energy
+                                        value matches {
+                                            DV_ORDINAL[id9050] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at148]}],
+                                                    [{1}, {[at149]}],
+                                                    [{2}, {[at150]}],
+                                                    [{3}, {[at151]}],
+                                                    [{4}, {[at152]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id132] occurrences matches {0..1} matches {    -- 13e Change in body weight
+                                        value matches {
+                                            DV_ORDINAL[id9051] matches {
+                                                [value, symbol] matches {
+                                                    [{0}, {[at153]}],
+                                                    [{1}, {[at154]}],
+                                                    [{2}, {[at155]}],
+                                                    [{3}, {[at156]}],
+                                                    [{4}, {[at157]}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id158] occurrences matches {0..1} matches {    -- Overall score
+                                        value matches {
+                                            DV_COUNT[id9052] matches {
+                                                magnitude matches {|1..111|}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        protocol matches {
+            ITEM_TREE[id159] matches {    -- Tree
+                items cardinality matches {0..*; unordered} matches {
+                    allow_archetype CLUSTER[id160] matches {     -- Extension
+                        include
+                            archetype_id/value matches {/.*/}
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id160"] = <
+                text = <"Extension">
+                description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+                comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+            >
+            ["id159"] = <
+                text = <"Tree">
+                description = <"@ internal @">
+            >
+            ["id158"] = <
+                text = <"Overall score">
+                description = <"Overall score, sum of all individual scores.">
+            >
+            ["at157"] = <
+                text = <"Big problem">
+                description = <"Change in body weight has been a big problem.">
+            >
+            ["at156"] = <
+                text = <"Moderate problem">
+                description = <"Change in body weight has been a moderate problem.">
+            >
+            ["at155"] = <
+                text = <"Small problem">
+                description = <"Change in body weight has been a small problem.">
+            >
+            ["at154"] = <
+                text = <"Very small problem">
+                description = <"Change in body weight has been a very small problem.">
+            >
+            ["at153"] = <
+                text = <"No problem">
+                description = <"Change in body weight has not been a problem.">
+            >
+            ["at152"] = <
+                text = <"Big problem">
+                description = <"Lack of energy has been a big problem.">
+            >
+            ["at151"] = <
+                text = <"Moderate problem">
+                description = <"Lack of energy has been a moderate problem.">
+            >
+            ["at150"] = <
+                text = <"Small problem">
+                description = <"Lack of energy has been a small problem.">
+            >
+            ["at149"] = <
+                text = <"Very small problem">
+                description = <"Lack of energy has been a very small problem.">
+            >
+            ["at148"] = <
+                text = <"No problem">
+                description = <"Lack of energy has not been a problem.">
+            >
+            ["at147"] = <
+                text = <"Big problem">
+                description = <"Feeling depressed has been a big problem.">
+            >
+            ["at146"] = <
+                text = <"Moderate problem">
+                description = <"Feeling depressed has been a moderate problem.">
+            >
+            ["at145"] = <
+                text = <"Small problem">
+                description = <"Feeling depressed has been a small problem.">
+            >
+            ["at144"] = <
+                text = <"Very small problem">
+                description = <"Feeling depressed has been a very small problem.">
+            >
+            ["at143"] = <
+                text = <"No problem">
+                description = <"Feeling depressed has not been a problem.">
+            >
+            ["at142"] = <
+                text = <"Big problem">
+                description = <"Breast tenderness/enlargement has been a big problem.">
+            >
+            ["at141"] = <
+                text = <"Moderate problem">
+                description = <"Breast tenderness/enlargement has been a moderate problem.">
+            >
+            ["at140"] = <
+                text = <"Small problem">
+                description = <"Breast tenderness/enlargement has been a small problem.">
+            >
+            ["at139"] = <
+                text = <"Very small problem">
+                description = <"Breast tenderness/enlargement has been a very small problem.">
+            >
+            ["at138"] = <
+                text = <"No problem">
+                description = <"Breast tenderness/enlargement has not been a problem.">
+            >
+            ["at137"] = <
+                text = <"Big problem">
+                description = <"Hot flushes have been a big problem.">
+            >
+            ["at136"] = <
+                text = <"Moderate problem">
+                description = <"Hot flushes have been a moderate problem.">
+            >
+            ["at135"] = <
+                text = <"Small problem">
+                description = <"Hot flushes have been a small problem.">
+            >
+            ["at134"] = <
+                text = <"Very small problem">
+                description = <"Hot flushes have been a very small problem.">
+            >
+            ["at133"] = <
+                text = <"No problem">
+                description = <"Hot flushes have not been a problem.">
+            >
+            ["id132"] = <
+                text = <"13e Change in body weight">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? e. Change in body weight.">
+            >
+            ["id131"] = <
+                text = <"13d Lack of energy">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? d. Lack of energy.">
+            >
+            ["id130"] = <
+                text = <"13c Feeling depressed">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? c. Feeling depressed.">
+            >
+            ["id129"] = <
+                text = <"13b Breast tenderness/enlargement">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? b. Breast tenderness/enlargement.">
+            >
+            ["id128"] = <
+                text = <"13a Hot flushes">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? a. Hot flushes.">
+            >
+            ["at127"] = <
+                text = <"Big problem">
+                description = <"Sexual function or lack of sexual function has been a big problem.">
+            >
+            ["at126"] = <
+                text = <"Moderate problem">
+                description = <"Sexual function or lack of sexual function has been a moderate problem.">
+            >
+            ["at125"] = <
+                text = <"Small problem">
+                description = <"Sexual function or lack of sexual function has been a small problem.">
+            >
+            ["at124"] = <
+                text = <"Very small problem">
+                description = <"Sexual function or lack of sexual function has been a very small problem.">
+            >
+            ["at123"] = <
+                text = <"No problem">
+                description = <"Sexual function or lack of sexual function has not been a problem.">
+            >
+            ["id122"] = <
+                text = <"12 Sexual function problem">
+                description = <"Question: Overall, how big a problem has your sexual function or lack of sexual function been for you during the last 4 weeks?">
+            >
+            ["at121"] = <
+                text = <"Very good">
+                description = <"Ability to function sexually has been very good.">
+            >
+            ["at120"] = <
+                text = <"Good">
+                description = <"Ability to function sexually has been good.">
+            >
+            ["at119"] = <
+                text = <"Fair">
+                description = <"Ability to function sexually has been fair.">
+            >
+            ["at118"] = <
+                text = <"Poor">
+                description = <"Ability to function sexually has been poor.">
+            >
+            ["at117"] = <
+                text = <"Very poor">
+                description = <"Ability to function sexually has been very poor.">
+            >
+            ["id116"] = <
+                text = <"11 Overall sexual ability">
+                description = <"Question: Overall, how would you rate your ability to function sexually during the last 4 weeks?">
+            >
+            ["at115"] = <
+                text = <"Whenever wanted">
+                description = <"Patient had erections whenever they wanted one.">
+            >
+            ["at114"] = <
+                text = <"More than half the time">
+                description = <"Patient had erections more than half the time they wanted one.">
+            >
+            ["at113"] = <
+                text = <"About half the time">
+                description = <"Patient had erections about half the time they wanted one.">
+            >
+            ["at112"] = <
+                text = <"Less than half the time">
+                description = <"Patient had erections less than half the time they wanted one.">
+            >
+            ["at111"] = <
+                text = <"Never when wanted">
+                description = <"Patient never experienced erection when they wanted one.">
+            >
+            ["id110"] = <
+                text = <"10 Frequency of erections">
+                description = <"Question: How would you describe the FREQUENCY of your erections during the last 4 weeks?">
+            >
+            ["at109"] = <
+                text = <"Firm enough for intercourse">
+                description = <"Erections have been firm enough for intercourse.">
+            >
+            ["at108"] = <
+                text = <"Firm enough for masturbation and foreplay only">
+                description = <"Erections have only been firm enough for masturbation and foreplay.">
+            >
+            ["at107"] = <
+                text = <"Not firm enough for any sexual activity">
+                description = <"Erections have not been firm enough for any sexual activity.">
+            >
+            ["at106"] = <
+                text = <"None at all">
+                description = <"Patient has experienced no erections at all.">
+            >
+            ["id105"] = <
+                text = <"9 Quality of erections">
+                description = <"Question: How would you describe the usual QUALITY of your erections during the last 4 weeks?">
+            >
+            ["at104"] = <
+                text = <"Very good">
+                description = <"Ability to reach orgasm has been very good.">
+            >
+            ["at103"] = <
+                text = <"Good">
+                description = <"Ability to reach orgasm has been good.">
+            >
+            ["at102"] = <
+                text = <"Fair">
+                description = <"Ability to reach orgasm has been fair.">
+            >
+            ["at101"] = <
+                text = <"Poor">
+                description = <"Ability to reach orgasm has been poor.">
+            >
+            ["at100"] = <
+                text = <"Very poor to none">
+                description = <"Ability to reach orgasm has been very poor to none.">
+            >
+            ["id99"] = <
+                text = <"8b Ability to reach orgasm">
+                description = <"Question: How would you rate each of the following during the last 4 weeks? b. Ability to reach orgasm (climax).">
+            >
+            ["at98"] = <
+                text = <"Very good">
+                description = <"Ability to have an erection has been very good.">
+            >
+            ["at97"] = <
+                text = <"Good">
+                description = <"Ability to have an erection has been good.">
+            >
+            ["at96"] = <
+                text = <"Fair">
+                description = <"Ability to have an erection has been fair.">
+            >
+            ["at95"] = <
+                text = <"Poor">
+                description = <"Ability to have an erection has been poor.">
+            >
+            ["at94"] = <
+                text = <"Very poor to none">
+                description = <"Ability to have an erection has been very poor to none.">
+            >
+            ["id93"] = <
+                text = <"8a Ability to have erection">
+                description = <"Question: How would you rate each of the following during the last 4 weeks? a. Ability to have an erection.">
+            >
+            ["at92"] = <
+                text = <"Big problem">
+                description = <"Overall bowel habits have been a big problem.">
+            >
+            ["at91"] = <
+                text = <"Moderate problem">
+                description = <"Overall bowel habits have been a moderate problem.">
+            >
+            ["at90"] = <
+                text = <"Small problem">
+                description = <"Overall bowel habits have been a small problem.">
+            >
+            ["at89"] = <
+                text = <"Very small problem">
+                description = <"Overall bowel habits have been a very small problem.">
+            >
+            ["at88"] = <
+                text = <"No problem">
+                description = <"Overall bowel habits have not been a problem.">
+            >
+            ["id87"] = <
+                text = <"7 Overall bowel habits">
+                description = <"Question: Overall, how big a problem have your bowel habits been for you during the last 4 weeks?">
+            >
+            ["at86"] = <
+                text = <"Big problem">
+                description = <"Abdominal/pelvic/rectal pain has been a big problem.">
+            >
+            ["at85"] = <
+                text = <"Moderate problem">
+                description = <"Abdominal/pelvic/rectal pain has been a moderate problem.">
+            >
+            ["at84"] = <
+                text = <"Small problem">
+                description = <"Abdominal/pelvic/rectal pain has been a small problem.">
+            >
+            ["at83"] = <
+                text = <"Very small problem">
+                description = <"Abdominal/pelvic/rectal pain has been a very small problem.">
+            >
+            ["at82"] = <
+                text = <"No problem">
+                description = <"Abdominal/pelvic/rectal pain has not been a problem.">
+            >
+            ["id81"] = <
+                text = <"6e Abdominal/pelvic/rectal pain">
+                description = <"Question: How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain.">
+            >
+            ["at80"] = <
+                text = <"Big problem">
+                description = <"Bloody stools have been a big problem.">
+            >
+            ["at79"] = <
+                text = <"Moderate problem">
+                description = <"Bloody stools have been a moderate problem.">
+            >
+            ["at78"] = <
+                text = <"Small problem">
+                description = <"Bloody stools have been a small problem.">
+            >
+            ["at77"] = <
+                text = <"Very small problem">
+                description = <"Bloody stools have been a very small problem.">
+            >
+            ["at76"] = <
+                text = <"No problem">
+                description = <"Bloody stools have not been a problem.">
+            >
+            ["id75"] = <
+                text = <"6d Bloody stools">
+                description = <"Question: How big a problem, if any, has each of the following been for you? d. Bloody stools.">
+            >
+            ["at74"] = <
+                text = <"Big problem">
+                description = <"Losing control of stools has been a bigproblem.">
+            >
+            ["at73"] = <
+                text = <"Moderate problem">
+                description = <"Losing control of stools has been a moderate problem.">
+            >
+            ["at72"] = <
+                text = <"Small problem">
+                description = <"Losing control of stools has been a small problem.">
+            >
+            ["at71"] = <
+                text = <"Very small problem">
+                description = <"Losing control of stools has been a very small problem.">
+            >
+            ["at70"] = <
+                text = <"No problem">
+                description = <"Losing control of stools has not been a problem.">
+            >
+            ["id69"] = <
+                text = <"6c Losing control of stools">
+                description = <"Question: How big a problem, if any, has each of the following been for you? c. Losing control of stools.">
+            >
+            ["at68"] = <
+                text = <"Big problem">
+                description = <"Increased frequency of bowel movements has been a big problem.">
+            >
+            ["at67"] = <
+                text = <"Moderate problem">
+                description = <"Increased frequency of bowel movements has been a moderate problem.">
+            >
+            ["at66"] = <
+                text = <"Small problem">
+                description = <"Increased frequency of bowel movements has been a small problem.">
+            >
+            ["at65"] = <
+                text = <"Very small problem">
+                description = <"Increased frequency of bowel movements has been a very small problem.">
+            >
+            ["at64"] = <
+                text = <"No problem">
+                description = <"Increased frequency of bowel movements has not been a problem.">
+            >
+            ["id63"] = <
+                text = <"6b Increased frequency of bowel movements">
+                description = <"Question: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements.">
+            >
+            ["at62"] = <
+                text = <"Big problem">
+                description = <"Urgency to have bowel movement has been a big problem.">
+            >
+            ["at61"] = <
+                text = <"Moderate problem">
+                description = <"Urgency to have bowel movement has been a moderate problem.">
+            >
+            ["at60"] = <
+                text = <"Small problem">
+                description = <"Urgency to have bowel movement has been a small problem.">
+            >
+            ["at59"] = <
+                text = <"Very small problem">
+                description = <"Urgency to have bowel movement has been a very small problem.">
+            >
+            ["at58"] = <
+                text = <"No problem">
+                description = <"Urgency to have bowel movement has not been a problem.">
+            >
+            ["id57"] = <
+                text = <"6a Urgency to have bowel movement">
+                description = <"Question: How big a problem, if any, has each of the following been for you? a Urgency to have bowel movement.">
+            >
+            ["at56"] = <
+                text = <"Big problem">
+                description = <"Overall urinary function has been a big problem.">
+            >
+            ["at55"] = <
+                text = <"Moderate problem">
+                description = <"Overall urinary function has been a moderate problem.">
+            >
+            ["at54"] = <
+                text = <"Small problem">
+                description = <"Overall urinary function has been a small problem.">
+            >
+            ["at53"] = <
+                text = <"Very small problem">
+                description = <"Overall urinary function has been a very small problem.">
+            >
+            ["at52"] = <
+                text = <"No problem">
+                description = <"Overall urinary function has not been a problem.">
+            >
+            ["id51"] = <
+                text = <"5 Overall urinary function">
+                description = <"Question: Overall, how big a problem has your urinary function been for you during the last 4 weeks?">
+            >
+            ["at50"] = <
+                text = <"Big problem">
+                description = <"Need to urinate frequently during the day has been a big problem.">
+            >
+            ["at49"] = <
+                text = <"Moderate problem">
+                description = <"Need to urinate frequently during the day has been a moderate problem.">
+            >
+            ["at48"] = <
+                text = <"Small problem">
+                description = <"Need to urinate frequently during the day has been a small problem.">
+            >
+            ["at47"] = <
+                text = <"Very small problem">
+                description = <"Need to urinate frequently during the day has been a very small problem.">
+            >
+            ["at46"] = <
+                text = <"No problem">
+                description = <"Need to urinate frequently during the day has not been a problem.">
+            >
+            ["id45"] = <
+                text = <"4e Need to urinate frequently during day">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? e. Need to urinate frequently during the day.">
+            >
+            ["at44"] = <
+                text = <"Big problem">
+                description = <"Weak stream of urine or incomplete emptying has been a big problem.">
+            >
+            ["at43"] = <
+                text = <"Moderate problem">
+                description = <"Weak stream of urine or incomplete emptying has been a moderate problem.">
+            >
+            ["at42"] = <
+                text = <"Small problem">
+                description = <"Weak stream of urine or incomplete emptying has been a small problem.">
+            >
+            ["at41"] = <
+                text = <"Very small problem">
+                description = <"Weak stream of urine or incomplete emptying has been a very small problem.">
+            >
+            ["at40"] = <
+                text = <"No problem">
+                description = <"Weak stream of urine or incomplete emptying has not been a problem.">
+            >
+            ["id39"] = <
+                text = <"4d Weak urine stream or incomplete emptying">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? d. Weak urine stream or incomplete emptying.">
+            >
+            ["at38"] = <
+                text = <"Big problem">
+                description = <"Bleeding with urination has been a big problem.">
+            >
+            ["at37"] = <
+                text = <"Moderate problem">
+                description = <"Bleeding with urination has been a moderate problem.">
+            >
+            ["at36"] = <
+                text = <"Small problem">
+                description = <"Bleeding with urination has been a small problem.">
+            >
+            ["at35"] = <
+                text = <"Very small problem">
+                description = <"Bleeding with urination has been a very small problem.">
+            >
+            ["at34"] = <
+                text = <"No problem">
+                description = <"Bleeding with urination has not been a problem.">
+            >
+            ["id33"] = <
+                text = <"4c Bleeding with urination">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? c. Bleeding with urination.">
+            >
+            ["at32"] = <
+                text = <"Big problem">
+                description = <"Pain or burning on urination has been a big problem.">
+            >
+            ["at31"] = <
+                text = <"Moderate problem">
+                description = <"Pain or burning on urination has been a moderate problem.">
+            >
+            ["at30"] = <
+                text = <"Small problem">
+                description = <"Pain or burning on urination has been a small problem.">
+            >
+            ["at29"] = <
+                text = <"Very small problem">
+                description = <"Pain or burning on urination has been a very small problem.">
+            >
+            ["at28"] = <
+                text = <"No problem">
+                description = <"Pain or burning on urination has not been a problem.">
+            >
+            ["id27"] = <
+                text = <"4b Pain or burning on urination">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks?  b. Pain or burning on urination.">
+            >
+            ["at26"] = <
+                text = <"Big problem">
+                description = <"Dripping or leaking urine has been a big problem.">
+            >
+            ["at25"] = <
+                text = <"Moderate problem">
+                description = <"Dripping or leaking urine has been a moderate problem.">
+            >
+            ["at24"] = <
+                text = <"Small problem">
+                description = <"Dripping or leaking urine has been a small problem.">
+            >
+            ["at23"] = <
+                text = <"Very small problem">
+                description = <"Dripping or leaking urine has been a very small problem.">
+            >
+            ["at22"] = <
+                text = <"No problem">
+                description = <"Dripping or leaking urine has not been a problem.">
+            >
+            ["id21"] = <
+                text = <"4a Dripping or leaking urine">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? a. Dripping or leaking urine.">
+            >
+            ["at20"] = <
+                text = <"3 or more pads per day">
+                description = <"Patient has used three or more pads or adult diapers per day.">
+            >
+            ["at19"] = <
+                text = <"2 pads per day">
+                description = <"Patient has used two pads or adult diapers per day.">
+            >
+            ["at18"] = <
+                text = <"1 pad per day">
+                description = <"Patient has used one pad or adult diaper per day.">
+            >
+            ["at17"] = <
+                text = <"None">
+                description = <"Patient has not used any pads or adult diapers.">
+            >
+            ["id16"] = <
+                text = <"3 Pads or adult diapers">
+                description = <"Question: How many pads or adult diapers per day did you usually use to control leakage during the last 4 weeks?">
+            >
+            ["at15"] = <
+                text = <"Total control">
+                description = <"Patient has total urinary control.">
+            >
+            ["at14"] = <
+                text = <"Occasional dribbling">
+                description = <"Patient experiences occasional dribbling.">
+            >
+            ["at13"] = <
+                text = <"Frequent dribbling">
+                description = <"Patient experiences frequent dribbling.">
+            >
+            ["at12"] = <
+                text = <"No urinary control whatsoever">
+                description = <"Patient has no urinary control whatsoever.">
+            >
+            ["id11"] = <
+                text = <"2 Urinary control">
+                description = <"Question: Which of the following best describes your urinary control during the last 4 weeks?">
+            >
+            ["at10"] = <
+                text = <"Rarely or never">
+                description = <"Patient is leaking urine rarely or never.">
+            >
+            ["at9"] = <
+                text = <"About once a week">
+                description = <"Patient is leaking urine about once a week.">
+            >
+            ["at8"] = <
+                text = <"More than once a week">
+                description = <"Patient is leaking urine more than once a week.">
+            >
+            ["at7"] = <
+                text = <"About once a day">
+                description = <"Patient is leaking urine about once a day.">
+            >
+            ["at6"] = <
+                text = <"More than once a day">
+                description = <"Patient is leaking urine more than once a day.">
+            >
+            ["id5"] = <
+                text = <"1 Urine leakage">
+                description = <"Question: Over the past 4 weeks, how often have you leaked urine?">
+            >
+            ["id4"] = <
+                text = <"Tree">
+                description = <"@ internal @">
+            >
+            ["id3"] = <
+                text = <"Point in time">
+                description = <"Specified point in time which may be explicitly defined in a template or at run-time.">
+            >
+            ["id2"] = <
+                text = <"Event Series">
+                description = <"@ internal @">
+            >
+            ["id1"] = <
+                text = <"ICHOM LPC EPIC-26 Questionnaire">
+                description = <"Questionnaire and score designed to measure quality of life issues in patients with prostrate cancer.">
+            >
+        >
+    >
+    value_sets = <
+        ["ac9000"] = <
+            id = <"ac9000">
+            members = <"at6", "at7", "at8", "at9", "at10">
+        >
+        ["ac9001"] = <
+            id = <"ac9001">
+            members = <"at12", "at13", "at14", "at15">
+        >
+        ["ac9002"] = <
+            id = <"ac9002">
+            members = <"at17", "at18", "at19", "at20">
+        >
+        ["ac9003"] = <
+            id = <"ac9003">
+            members = <"at22", "at23", "at24", "at25", "at26">
+        >
+        ["ac9004"] = <
+            id = <"ac9004">
+            members = <"at28", "at29", "at30", "at31", "at32">
+        >
+        ["ac9005"] = <
+            id = <"ac9005">
+            members = <"at34", "at35", "at36", "at37", "at38">
+        >
+        ["ac9006"] = <
+            id = <"ac9006">
+            members = <"at40", "at41", "at42", "at43", "at44">
+        >
+        ["ac9007"] = <
+            id = <"ac9007">
+            members = <"at46", "at47", "at48", "at49", "at50">
+        >
+        ["ac9008"] = <
+            id = <"ac9008">
+            members = <"at52", "at53", "at54", "at55", "at56">
+        >
+        ["ac9009"] = <
+            id = <"ac9009">
+            members = <"at58", "at59", "at60", "at61", "at62">
+        >
+        ["ac9010"] = <
+            id = <"ac9010">
+            members = <"at64", "at65", "at66", "at67", "at68">
+        >
+        ["ac9011"] = <
+            id = <"ac9011">
+            members = <"at70", "at71", "at72", "at73", "at74">
+        >
+        ["ac9012"] = <
+            id = <"ac9012">
+            members = <"at76", "at77", "at78", "at79", "at80">
+        >
+        ["ac9013"] = <
+            id = <"ac9013">
+            members = <"at82", "at83", "at84", "at85", "at86">
+        >
+        ["ac9014"] = <
+            id = <"ac9014">
+            members = <"at88", "at89", "at90", "at91", "at92">
+        >
+        ["ac9015"] = <
+            id = <"ac9015">
+            members = <"at94", "at95", "at96", "at97", "at98">
+        >
+        ["ac9016"] = <
+            id = <"ac9016">
+            members = <"at100", "at101", "at102", "at103", "at104">
+        >
+        ["ac9017"] = <
+            id = <"ac9017">
+            members = <"at106", "at107", "at108", "at109">
+        >
+        ["ac9018"] = <
+            id = <"ac9018">
+            members = <"at111", "at112", "at113", "at114", "at115">
+        >
+        ["ac9019"] = <
+            id = <"ac9019">
+            members = <"at117", "at118", "at119", "at120", "at121">
+        >
+        ["ac9020"] = <
+            id = <"ac9020">
+            members = <"at123", "at124", "at125", "at126", "at127">
+        >
+        ["ac9021"] = <
+            id = <"ac9021">
+            members = <"at133", "at134", "at135", "at136", "at137">
+        >
+        ["ac9022"] = <
+            id = <"ac9022">
+            members = <"at138", "at139", "at140", "at141", "at142">
+        >
+        ["ac9023"] = <
+            id = <"ac9023">
+            members = <"at143", "at144", "at145", "at146", "at147">
+        >
+        ["ac9024"] = <
+            id = <"ac9024">
+            members = <"at148", "at149", "at150", "at151", "at152">
+        >
+        ["ac9025"] = <
+            id = <"ac9025">
+            members = <"at153", "at154", "at155", "at156", "at157">
+        >
+    >
