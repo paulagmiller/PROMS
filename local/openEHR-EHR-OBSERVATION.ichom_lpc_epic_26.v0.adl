@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"372e7532b5c8cce125cf201061a9d093">
+		["MD5-CAM-1.0.1"] = <"07a7cc6ef002150c0c3595d949659d1a">
 		["build_uid"] = <"542f9d96-44f6-4150-903b-cd3846108075">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -325,8 +325,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"1 Urine leakage">
-					description = <"Patient reported statement about frequency of urine leakage in past 4 weeks.">
-					comment = <"Oriaire question: Over the past 4 weeks, how often have you leaked urine?">
+					description = <"Question: Over the past 4 weeks, how often have you leaked urine?">
 				>
 				["at0005"] = <
 					text = <"More than once a day">
@@ -350,8 +349,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"2 Urinary control">
-					description = <"Patient reported statement about urinary control in past 4 weeks.">
-					comment = <"Orinal questionnaire question: Which of the following best describes your urinary control during the last 4 weeks?">
+					description = <"Question: Which of the following best describes your urinary control during the last 4 weeks?">
 				>
 				["at0011"] = <
 					text = <"No urinary control whatsoever">
@@ -371,8 +369,7 @@ ontology
 				>
 				["at0015"] = <
 					text = <"3 Pads or adult diapers">
-					description = <"Patient reported statement about number of pads or adult diapers used per day to control leakage in past 4 weeks.">
-					comment = <"Original questionnaire question: How many pads or adult diapers per day did you usually use to control leakage during the last 4 weeks?">
+					description = <"Question: How many pads or adult diapers per day did you usually use to control leakage during the last 4 weeks?">
 				>
 				["at0016"] = <
 					text = <"None">
@@ -392,8 +389,7 @@ ontology
 				>
 				["at0020"] = <
 					text = <"4a Dripping or leaking urine">
-					description = <"Patient reported statement on how big a problem dripping or leaking urine has been over past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you during the last 4 weeks? a. Dripping or leaking urine.">
+					description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? a. Dripping or leaking urine.">
 				>
 				["at0021"] = <
 					text = <"No problem">
@@ -417,8 +413,7 @@ ontology
 				>
 				["at0026"] = <
 					text = <"4b Pain or burning on urination">
-					description = <"Patient reported statement on how big a problem pain or burning on urination has been over past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you during the last 4 weeks?  b. Pain or burning on urination.">
+					description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks?  b. Pain or burning on urination.">
 				>
 				["at0027"] = <
 					text = <"No problem">
@@ -442,8 +437,7 @@ ontology
 				>
 				["at0032"] = <
 					text = <"4c Bleeding with urination">
-					description = <"Patient reported statement on how big a problem bleeding with urination has been over past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you during the last 4 weeks? c. Bleeding with urination.">
+					description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? c. Bleeding with urination.">
 				>
 				["at0033"] = <
 					text = <"No problem">
@@ -467,8 +461,7 @@ ontology
 				>
 				["at0038"] = <
 					text = <"4d Weak urine stream or incomplete emptying">
-					description = <"Patient reported statement on how big a problem weak urine stream or incomplete emptying has been over past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you during the last 4 weeks? d. Weak urine stream or incomplete emptying.">
+					description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? d. Weak urine stream or incomplete emptying.">
 				>
 				["at0039"] = <
 					text = <"No problem">
@@ -492,8 +485,7 @@ ontology
 				>
 				["at0044"] = <
 					text = <"4e Need to urinate frequently during day">
-					description = <"Patient reported statement on how big a problem the need to urinate frequently during the day has been over past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you during the last 4 weeks? e. Need to urinate frequently during the day.">
+					description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? e. Need to urinate frequently during the day.">
 				>
 				["at0045"] = <
 					text = <"No problem">
@@ -517,8 +509,7 @@ ontology
 				>
 				["at0050"] = <
 					text = <"5 Overall urinary function">
-					description = <"Patient reported statement of how big a problem urinary function has been overall in past 4 weeks.">
-					comment = <"Original questionnaire question: Overall, how big a problem has your urinary function been for you during the last 4 weeks?">
+					description = <"Question: Overall, how big a problem has your urinary function been for you during the last 4 weeks?">
 				>
 				["at0051"] = <
 					text = <"No problem">
@@ -542,8 +533,7 @@ ontology
 				>
 				["at0056"] = <
 					text = <"6a Urgency to have bowel movement">
-					description = <"Patient reported statement on how big a problem urgency to have bowel movement has been.">
-					comment = <"Original questionnaire question: How big a problem, if any, has each of the following been for you? a Urgency to have bowel movement.">
+					description = <"Question: How big a problem, if any, has each of the following been for you? a Urgency to have bowel movement.">
 				>
 				["at0057"] = <
 					text = <"No problem">
@@ -567,8 +557,7 @@ ontology
 				>
 				["at0062"] = <
 					text = <"6b Increased frequency of bowel movements">
-					description = <"Patient reported statement on how big a problem increased frequency of bowel movements has been.">
-					comment = <"Original questionnaire questions: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements.">
+					description = <"Questions: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements.">
 				>
 				["at0063"] = <
 					text = <"No problem">
@@ -592,8 +581,7 @@ ontology
 				>
 				["at0068"] = <
 					text = <"6c Losing control of stools">
-					description = <"Patient reported statement on how big a problem losing control of stools has been.">
-					comment = <"Original questionnaire questions: How big a problem, if any, has each of the following been for you? c. Losing control of stools.">
+					description = <"Questions: How big a problem, if any, has each of the following been for you? c. Losing control of stools.">
 				>
 				["at0069"] = <
 					text = <"No problem">
@@ -617,8 +605,7 @@ ontology
 				>
 				["at0074"] = <
 					text = <"6d Bloody stools">
-					description = <"Patient reported statement on how big a problem bloody stools have been.">
-					comment = <"Orginal questionnaire question:  How big a problem, if any, has each of the following been for you? d. Bloody stools.">
+					description = <"Question:  How big a problem, if any, has each of the following been for you? d. Bloody stools.">
 				>
 				["at0075"] = <
 					text = <"No problem">
@@ -642,8 +629,7 @@ ontology
 				>
 				["at0080"] = <
 					text = <"6e Abdominal/pelvic/rectal pain">
-					description = <"Patient reported statement of how big a problem abdominal/pelvic/rectal pain has been.">
-					comment = <"Orginal questionnaire question:  How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain.">
+					description = <"Question:  How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain.">
 				>
 				["at0081"] = <
 					text = <"No problem">
@@ -667,8 +653,7 @@ ontology
 				>
 				["at0086"] = <
 					text = <"7 Overall bowel habits">
-					description = <"Patient reported statement on how big a problem overall bowel habits has been over past 4 weeks.">
-					comment = <"Original questionnaire question: Overall, how big a problem have your bowel habits been for you during the last 4 weeks?">
+					description = <"Question: Overall, how big a problem have your bowel habits been for you during the last 4 weeks?">
 				>
 				["at0087"] = <
 					text = <"No problem">
@@ -692,8 +677,7 @@ ontology
 				>
 				["at0092"] = <
 					text = <"8a Ability to have erection">
-					description = <"Patient reported statement on ability to have an erection during past 4 weeks.">
-					comment = <"Original questionnaire question: How would you rate each of the following during the last 4 weeks? a. Ability to have an erection.">
+					description = <"Question: How would you rate each of the following during the last 4 weeks? a. Ability to have an erection.">
 				>
 				["at0093"] = <
 					text = <"Very poor to none">
@@ -717,8 +701,7 @@ ontology
 				>
 				["at0098"] = <
 					text = <"8b Ability to reach orgasm">
-					description = <"Patient reported statement on ability to reach orgasm.">
-					comment = <"Original questionnaire question: How would you rate each of the following during the last 4 weeks? b. Ability to reach orgasm (climax).">
+					description = <"Question: How would you rate each of the following during the last 4 weeks? b. Ability to reach orgasm (climax).">
 				>
 				["at0099"] = <
 					text = <"Very poor to none">
@@ -742,8 +725,8 @@ ontology
 				>
 				["at0104"] = <
 					text = <"9 Quality of erections">
-					description = <"Patient reported statement on quality of erections over past 4 weeks.">
-					comment = <"Original questionnaire question: How would you describe the usual QUALITY of your erections during the last 4 weeks?">
+					description = <"Question: How would you describe the usual QUALITY of your erections during the last 4 weeks?">
+					comment = <"Original questionnaire ">
 				>
 				["at0105"] = <
 					text = <"None at all">
@@ -763,8 +746,7 @@ ontology
 				>
 				["at0109"] = <
 					text = <"10 Frequency of erections">
-					description = <"Patient reported statement on frequency of erections over past 4 weeks.">
-					comment = <"Original questionnaire question: How would you describe the FREQUENCY of your erections during the last 4 weeks?">
+					description = <"Question: How would you describe the FREQUENCY of your erections during the last 4 weeks?">
 				>
 				["at0110"] = <
 					text = <"Never when wanted">
@@ -788,8 +770,7 @@ ontology
 				>
 				["at0115"] = <
 					text = <"11 Overall sexual ability">
-					description = <"Patient reported statement on their ability to function sexually over past 4 weeks.">
-					comment = <"Original questionnaire question: Overall, how would you rate your ability to function sexually during the last 4 weeks?">
+					description = <"Question: Overall, how would you rate your ability to function sexually during the last 4 weeks?">
 				>
 				["at0116"] = <
 					text = <"Very poor">
@@ -813,8 +794,7 @@ ontology
 				>
 				["at0121"] = <
 					text = <"12 Sexual function problem">
-					description = <"Patient reported statement on how big a problem sexual function or lack of sexual function has been over past 4 weeks.">
-					comment = <"Original questionnaire question: Overall, how big a problem has your sexual function or lack of sexual function been for you during the last 4 weeks?">
+					description = <"Question: Overall, how big a problem has your sexual function or lack of sexual function been for you during the last 4 weeks?">
 				>
 				["at0122"] = <
 					text = <"No problem">
@@ -838,28 +818,23 @@ ontology
 				>
 				["at0127"] = <
 					text = <"13a Hot flushes">
-					description = <"Patient reported statement on how big a problem hot flushes have been in past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem during the last 4 weeks, if any, has each of the following been for you? a. Hot flushes.">
+					description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? a. Hot flushes.">
 				>
 				["at0128"] = <
 					text = <"13b Breast tenderness/enlargement">
-					description = <"Patient reported statement on how big a problem breast tenderness/enlargement has been in past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem during the last 4 weeks, if any, has each of the following been for you? b. Breast tenderness/enlargement.">
+					description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? b. Breast tenderness/enlargement.">
 				>
 				["at0129"] = <
 					text = <"13c Feeling depressed">
-					description = <"Patient reported statement on how big a problem feeling depressed has been in past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem during the last 4 weeks, if any, has each of the following been for you? c. Feeling depressed.">
+					description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? c. Feeling depressed.">
 				>
 				["at0130"] = <
 					text = <"13d Lack of energy">
-					description = <"Patient reported statement on how big a problem lack of energy has been in past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem during the last 4 weeks, if any, has each of the following been for you? d. Lack of energy.">
+					description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? d. Lack of energy.">
 				>
 				["at0131"] = <
 					text = <"13e Change in body weight">
-					description = <"Patient reported statement on how big a problem change in body weight has been in past 4 weeks.">
-					comment = <"Original questionnaire question: How big a problem during the last 4 weeks, if any, has each of the following been for you? e. Change in body weight.">
+					description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? e. Change in body weight.">
 				>
 				["at0132"] = <
 					text = <"No problem">
@@ -964,6 +939,7 @@ ontology
 				["at0157"] = <
 					text = <"Overall score">
 					description = <"Overall score, sum of all individual scores.">
+					comment = <"Scoring is determined by the scoring matrix currently (August 2024) found here: https://medicine.umich.edu/sites/default/files/content/downloads/Scoring%20Instructions%20for%20the%20EPIC%2026.pdf  ">
 				>
 				["at0158"] = <
 					text = <"Tree">
