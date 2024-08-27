@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "2.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "83f390a172b53e5c71af90e4e6d175cd",
+      "MD5-CAM-1.0.1" : "8f8eaaf8e4fb01088bef0cb84ff88398",
       "PARENT:MD5-CAM-1.0.1" : "782C49493E523506E8C34B7C5CF7B761"
     },
     "details" : {
@@ -152,7 +152,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "NES_TS Prostate PROM",
+          "text" : "NTS Prostate PROM",
           "description" : "Generic container for information provided by an individual."
         }
       },
