@@ -1,4 +1,4 @@
-archetype (adl_version=2.0.6; rm_release=1.1.0; generated; uid=f1d39778-dc98-43ae-b133-67199ad85047; build_uid=9eea42c8-811e-3426-9b03-85f283735660)
+archetype (adl_version=2.0.6; rm_release=1.1.0; generated; uid=f1d39778-dc98-43ae-b133-67199ad85047; build_uid=542f9d96-44f6-4150-903b-cd3846108075)
     openEHR-EHR-OBSERVATION.ichom_lpc_epic_26.v0.0.1-alpha
 
 language
@@ -23,7 +23,7 @@ description
     >
     other_details = <
         ["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-        ["MD5-CAM-1.0.1"] = <"10049dd3869f24545710912dddf96f96">
+        ["MD5-CAM-1.0.1"] = <"07a7cc6ef002150c0c3595d949659d1a">
     >
     details = <
         ["en"] = <
@@ -408,6 +408,110 @@ definition
 terminology
     term_definitions = <
         ["en"] = <
+            ["ac9000"] = <
+                text = <"1 Urine leakage (synthesised)">
+                description = <"Question: Over the past 4 weeks, how often have you leaked urine? (synthesised)">
+            >
+            ["ac9001"] = <
+                text = <"2 Urinary control (synthesised)">
+                description = <"Question: Which of the following best describes your urinary control during the last 4 weeks? (synthesised)">
+            >
+            ["ac9002"] = <
+                text = <"3 Pads or adult diapers (synthesised)">
+                description = <"Question: How many pads or adult diapers per day did you usually use to control leakage during the last 4 weeks? (synthesised)">
+            >
+            ["ac9003"] = <
+                text = <"4a Dripping or leaking urine (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? a. Dripping or leaking urine. (synthesised)">
+            >
+            ["ac9004"] = <
+                text = <"4b Pain or burning on urination (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks?  b. Pain or burning on urination. (synthesised)">
+            >
+            ["ac9005"] = <
+                text = <"4c Bleeding with urination (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? c. Bleeding with urination. (synthesised)">
+            >
+            ["ac9006"] = <
+                text = <"4d Weak urine stream or incomplete emptying (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? d. Weak urine stream or incomplete emptying. (synthesised)">
+            >
+            ["ac9007"] = <
+                text = <"4e Need to urinate frequently during day (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you during the last 4 weeks? e. Need to urinate frequently during the day. (synthesised)">
+            >
+            ["ac9008"] = <
+                text = <"5 Overall urinary function (synthesised)">
+                description = <"Question: Overall, how big a problem has your urinary function been for you during the last 4 weeks? (synthesised)">
+            >
+            ["ac9009"] = <
+                text = <"6a Urgency to have bowel movement (synthesised)">
+                description = <"Question: How big a problem, if any, has each of the following been for you? a Urgency to have bowel movement. (synthesised)">
+            >
+            ["ac9010"] = <
+                text = <"6b Increased frequency of bowel movements (synthesised)">
+                description = <"Questions: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements. (synthesised)">
+            >
+            ["ac9011"] = <
+                text = <"6c Losing control of stools (synthesised)">
+                description = <"Questions: How big a problem, if any, has each of the following been for you? c. Losing control of stools. (synthesised)">
+            >
+            ["ac9012"] = <
+                text = <"6d Bloody stools (synthesised)">
+                description = <"Question:  How big a problem, if any, has each of the following been for you? d. Bloody stools. (synthesised)">
+            >
+            ["ac9013"] = <
+                text = <"6e Abdominal/pelvic/rectal pain (synthesised)">
+                description = <"Question:  How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain. (synthesised)">
+            >
+            ["ac9014"] = <
+                text = <"7 Overall bowel habits (synthesised)">
+                description = <"Question: Overall, how big a problem have your bowel habits been for you during the last 4 weeks? (synthesised)">
+            >
+            ["ac9015"] = <
+                text = <"8a Ability to have erection (synthesised)">
+                description = <"Question: How would you rate each of the following during the last 4 weeks? a. Ability to have an erection. (synthesised)">
+            >
+            ["ac9016"] = <
+                text = <"8b Ability to reach orgasm (synthesised)">
+                description = <"Question: How would you rate each of the following during the last 4 weeks? b. Ability to reach orgasm (climax). (synthesised)">
+            >
+            ["ac9017"] = <
+                text = <"9 Quality of erections (synthesised)">
+                description = <"Question: How would you describe the usual QUALITY of your erections during the last 4 weeks? (synthesised)">
+            >
+            ["ac9018"] = <
+                text = <"10 Frequency of erections (synthesised)">
+                description = <"Question: How would you describe the FREQUENCY of your erections during the last 4 weeks? (synthesised)">
+            >
+            ["ac9019"] = <
+                text = <"11 Overall sexual ability (synthesised)">
+                description = <"Question: Overall, how would you rate your ability to function sexually during the last 4 weeks? (synthesised)">
+            >
+            ["ac9020"] = <
+                text = <"12 Sexual function problem (synthesised)">
+                description = <"Question: Overall, how big a problem has your sexual function or lack of sexual function been for you during the last 4 weeks? (synthesised)">
+            >
+            ["ac9021"] = <
+                text = <"13a Hot flushes (synthesised)">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? a. Hot flushes. (synthesised)">
+            >
+            ["ac9022"] = <
+                text = <"13b Breast tenderness/enlargement (synthesised)">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? b. Breast tenderness/enlargement. (synthesised)">
+            >
+            ["ac9023"] = <
+                text = <"13c Feeling depressed (synthesised)">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? c. Feeling depressed. (synthesised)">
+            >
+            ["ac9024"] = <
+                text = <"13d Lack of energy (synthesised)">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? d. Lack of energy. (synthesised)">
+            >
+            ["ac9025"] = <
+                text = <"13e Change in body weight (synthesised)">
+                description = <"Question: How big a problem during the last 4 weeks, if any, has each of the following been for you? e. Change in body weight. (synthesised)">
+            >
             ["id160"] = <
                 text = <"Extension">
                 description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
@@ -420,6 +524,7 @@ terminology
             ["id158"] = <
                 text = <"Overall score">
                 description = <"Overall score, sum of all individual scores.">
+                comment = <"Scoring is determined by the scoring matrix currently (August 2024) found here: https://medicine.umich.edu/sites/default/files/content/downloads/Scoring%20Instructions%20for%20the%20EPIC%2026.pdf  ">
             >
             ["at157"] = <
                 text = <"Big problem">
@@ -632,6 +737,7 @@ terminology
             ["id105"] = <
                 text = <"9 Quality of erections">
                 description = <"Question: How would you describe the usual QUALITY of your erections during the last 4 weeks?">
+                comment = <"Original questionnaire ">
             >
             ["at104"] = <
                 text = <"Very good">
@@ -727,7 +833,7 @@ terminology
             >
             ["id81"] = <
                 text = <"6e Abdominal/pelvic/rectal pain">
-                description = <"Question: How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain.">
+                description = <"Question:  How big a problem, if any, has each of the following been for you? e. Abdominal/pelvic/rectal pain.">
             >
             ["at80"] = <
                 text = <"Big problem">
@@ -751,7 +857,7 @@ terminology
             >
             ["id75"] = <
                 text = <"6d Bloody stools">
-                description = <"Question: How big a problem, if any, has each of the following been for you? d. Bloody stools.">
+                description = <"Question:  How big a problem, if any, has each of the following been for you? d. Bloody stools.">
             >
             ["at74"] = <
                 text = <"Big problem">
@@ -775,7 +881,7 @@ terminology
             >
             ["id69"] = <
                 text = <"6c Losing control of stools">
-                description = <"Question: How big a problem, if any, has each of the following been for you? c. Losing control of stools.">
+                description = <"Questions: How big a problem, if any, has each of the following been for you? c. Losing control of stools.">
             >
             ["at68"] = <
                 text = <"Big problem">
@@ -799,7 +905,7 @@ terminology
             >
             ["id63"] = <
                 text = <"6b Increased frequency of bowel movements">
-                description = <"Question: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements.">
+                description = <"Questions: How big a problem, if any, has each of the following been for you? b. Increased frequency of bowel movements.">
             >
             ["at62"] = <
                 text = <"Big problem">
