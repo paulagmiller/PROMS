@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"8e5df23a26afaaf8f53bc8ae38408b4e">
+		["MD5-CAM-1.0.1"] = <"5cc80a293fd5ea9602c11503b97943c9">
 		["build_uid"] = <"542f9d96-44f6-4150-903b-cd3846108075">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -275,6 +275,30 @@ definition
 											2|[local::at0154],
 											3|[local::at0155],
 											4|[local::at0156]
+										}
+									}
+									CLUSTER[at0162] occurrences matches {0..1} matches {    -- Domain scores
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0160] occurrences matches {0..1} matches {    -- Urinary incontinence
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0163] occurrences matches {0..1} matches {    -- Urinary irritative/obstructive
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0161] occurrences matches {0..1} matches {    -- Sexual
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0164] occurrences matches {0..1} matches {    -- Hormonal
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
 										}
 									}
 									ELEMENT[at0157] occurrences matches {0..1} matches {    -- Overall score
@@ -949,6 +973,26 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
+				["at0160"] = <
+					text = <"Urinary incontinence">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"Sexual">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"Domain scores">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"Urinary irritative/obstructive">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"Hormonal">
+					description = <"">
 				>
 			>
 		>
