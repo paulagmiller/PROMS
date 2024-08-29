@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0362dac437f74cc0f5857cc8cabefaa1",
+      "MD5-CAM-1.0.1" : "efe13dcf421289fd19a8b95559885252",
       "PARENT:MD5-CAM-1.0.1" : "782C49493E523506E8C34B7C5CF7B761"
     },
     "details" : {
@@ -1138,9 +1138,25 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8e5df23a26afaaf8f53bc8ae38408b4e"
+        "PARENT:MD5-CAM-1.0.1" : "5cc80a293fd5ea9602c11503b97943c9"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Designed to capture questionnaire and score information for the EPIC-26 (Expanded Prostate Cancer Index Composite) measuring quality of life issues in patients with prostrate cancer.",
+          "keywords" : [ "EPIC", "EPIC-26", "prostate", "cancer", "index", "questionnaire", "score" ],
+          "use" : "For use in care settings where patients with prostate cancer are managed. The archetype is intended to capture patient responses to the EPIC-26 questions and record the overall score.",
+          "copyright" : "© Clinical Models UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.ichom_lpc_epic_26.v0",
     "differential" : true,
