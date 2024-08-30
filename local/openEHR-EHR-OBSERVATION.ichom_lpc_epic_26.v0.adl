@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5cc80a293fd5ea9602c11503b97943c9">
+		["MD5-CAM-1.0.1"] = <"ba0590331d07abbdd3db98d8b142d034">
 		["build_uid"] = <"542f9d96-44f6-4150-903b-cd3846108075">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -285,6 +285,11 @@ definition
 												}
 											}
 											ELEMENT[at0163] occurrences matches {0..1} matches {    -- Urinary irritative/obstructive
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0165] occurrences matches {0..1} matches {    -- Bowel
 												value matches {
 													DV_COUNT matches {*}
 												}
@@ -992,6 +997,10 @@ ontology
 				>
 				["at0164"] = <
 					text = <"Hormonal">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"Bowel">
 					description = <"">
 				>
 			>
