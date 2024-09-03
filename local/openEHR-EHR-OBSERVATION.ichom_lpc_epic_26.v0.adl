@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"ba0590331d07abbdd3db98d8b142d034">
+		["MD5-CAM-1.0.1"] = <"46edb8b8bd4e5217870b759ff1ad1ffb">
 		["build_uid"] = <"542f9d96-44f6-4150-903b-cd3846108075">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -989,7 +989,10 @@ ontology
 				>
 				["at0162"] = <
 					text = <"Domain scores">
-					description = <"">
+					description = <"This cluster contains the overall and domain summary scores. These scores are continuous numerical values on a scale of 0 to 100 determined using the EPIC-26 scoring instructions currently found here: https://medicine.umich.edu/sites/default/files/content/downloads/Scoring%20Instructions%20for%20the%20EPIC%2026.pdf
+
+
+">
 				>
 				["at0163"] = <
 					text = <"Urinary irritative/obstructive">
