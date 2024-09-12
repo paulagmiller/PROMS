@@ -1105,7 +1105,7 @@
             "code" : "at0005",
             "text" : "Service activity complete",
             "description" : "All service activities have been completed.",
-            "comment" : "testcomment"
+            "comment" : "xestcomment"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
