@@ -231,7 +231,7 @@ Let op dat er in het openEHR Referentiemodel een attribuut 'Tijd' is, dat bedoel
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b2e798c58dc874eaf3588ed9bcd9743b">
+		["MD5-CAM-1.0.1"] = <"133307828fd0370cf40a0b1c803c6a72">
 		["build_uid"] = <"f596dd3a-2cba-4dec-9d40-ecfefe33b142">
 		["revision"] = <"1.0.1">
 	>
@@ -426,22 +426,7 @@ definition
 					}
 					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Service type
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0037,    -- Pre-treatment
-									at0038,    -- ~6 weeks after treatment
-									at0039,    -- ~12 weeks after treatment
-									at0040,    -- ~6 months after treatment
-									at0041,    -- ~ 9 months after treatment
-									at0042,    -- 1 year after treatment
-									at0043,    -- 2 years after treatment
-									at0044,    -- 3 years after treatment
-									at0045,    -- 4 years after treatment
-									at0046,    -- 5 years after treatment
-									at0047]    -- Ad-hoc contemporaneous
-								}
-							}
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Description
@@ -661,50 +646,6 @@ ontology
 					text = <"Additional details">
 					description = <"Additional structured details about the service.">
 				>
-				["at0037"] = <
-					text = <"Pre-treatment">
-					description = <"PROM questions completed about patient status before a planned treatment">
-				>
-				["at0038"] = <
-					text = <"~6 weeks after treatment">
-					description = <"PROM questions completed about patient status shortly after treatment">
-				>
-				["at0039"] = <
-					text = <"~12 weeks after treatment">
-					description = <"PROM questions completed about patient status around 3 months after treatment">
-				>
-				["at0040"] = <
-					text = <"~6 months after treatment">
-					description = <"PROM questions completed about patient status around 6 months after treatment">
-				>
-				["at0041"] = <
-					text = <"~ 9 months after treatment">
-					description = <"PROM questions completed about patient status around 9 months after treatment">
-				>
-				["at0042"] = <
-					text = <"1 year after treatment">
-					description = <"PROM questions completed about patient status around 1 year after treatment">
-				>
-				["at0043"] = <
-					text = <"2 years after treatment">
-					description = <"PROM questions completed about patient status around 2 years after treatment">
-				>
-				["at0044"] = <
-					text = <"3 years after treatment">
-					description = <"PROM questions completed about patient status around 3 years after treatment">
-				>
-				["at0045"] = <
-					text = <"4 years after treatment">
-					description = <"PROM questions completed about patient status around 4 years after treatment">
-				>
-				["at0046"] = <
-					text = <"5 years after treatment">
-					description = <"PROM questions completed about patient status around 5 years after treatment">
-				>
-				["at0047"] = <
-					text = <"Ad-hoc contemporaneous">
-					description = <"PROM questions completed by the patient at any time about their status now">
-				>
 			>
 		>
 		["pt-br"] = <
@@ -841,50 +782,6 @@ ontology
 					text = <"*Additional details (en)">
 					description = <"*Additional structured details about the service. (en)">
 				>
-				["at0037"] = <
-					text = <"*Pre-treatment (en)">
-					description = <"*PROM questions completed about patient status before a planned treatment (en)">
-				>
-				["at0038"] = <
-					text = <"*~6 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status shortly after treatment (en)">
-				>
-				["at0039"] = <
-					text = <"*~12 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 months after treatment (en)">
-				>
-				["at0040"] = <
-					text = <"*~6 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 6 months after treatment (en)">
-				>
-				["at0041"] = <
-					text = <"*~ 9 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 9 months after treatment (en)">
-				>
-				["at0042"] = <
-					text = <"*1 year after treatment (en)">
-					description = <"*PROM questions completed about patient status around 1 year after treatment (en)">
-				>
-				["at0043"] = <
-					text = <"*2 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 2 years after treatment (en)">
-				>
-				["at0044"] = <
-					text = <"*3 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 years after treatment (en)">
-				>
-				["at0045"] = <
-					text = <"*4 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 4 years after treatment (en)">
-				>
-				["at0046"] = <
-					text = <"*5 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 5 years after treatment (en)">
-				>
-				["at0047"] = <
-					text = <"*Ad-hoc contemporaneous (en)">
-					description = <"*PROM questions completed by the patient at any time about their status now (en)">
-				>
 			>
 		>
 		["de"] = <
@@ -1018,50 +915,6 @@ ontology
 				["at0036"] = <
 					text = <"Zusätzliche Angaben">
 					description = <"Zusätzliche strukturierte Details zur Dienstleistung.">
-				>
-				["at0037"] = <
-					text = <"*Pre-treatment (en)">
-					description = <"*PROM questions completed about patient status before a planned treatment (en)">
-				>
-				["at0038"] = <
-					text = <"*~6 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status shortly after treatment (en)">
-				>
-				["at0039"] = <
-					text = <"*~12 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 months after treatment (en)">
-				>
-				["at0040"] = <
-					text = <"*~6 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 6 months after treatment (en)">
-				>
-				["at0041"] = <
-					text = <"*~ 9 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 9 months after treatment (en)">
-				>
-				["at0042"] = <
-					text = <"*1 year after treatment (en)">
-					description = <"*PROM questions completed about patient status around 1 year after treatment (en)">
-				>
-				["at0043"] = <
-					text = <"*2 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 2 years after treatment (en)">
-				>
-				["at0044"] = <
-					text = <"*3 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 years after treatment (en)">
-				>
-				["at0045"] = <
-					text = <"*4 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 4 years after treatment (en)">
-				>
-				["at0046"] = <
-					text = <"*5 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 5 years after treatment (en)">
-				>
-				["at0047"] = <
-					text = <"*Ad-hoc contemporaneous (en)">
-					description = <"*PROM questions completed by the patient at any time about their status now (en)">
 				>
 			>
 		>
@@ -1197,50 +1050,6 @@ ontology
 					text = <"Ytterligere detaljer">
 					description = <"Ytterligere strukturerte detaljer om tjenesten.">
 				>
-				["at0037"] = <
-					text = <"*Pre-treatment (en)">
-					description = <"*PROM questions completed about patient status before a planned treatment (en)">
-				>
-				["at0038"] = <
-					text = <"*~6 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status shortly after treatment (en)">
-				>
-				["at0039"] = <
-					text = <"*~12 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 months after treatment (en)">
-				>
-				["at0040"] = <
-					text = <"*~6 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 6 months after treatment (en)">
-				>
-				["at0041"] = <
-					text = <"*~ 9 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 9 months after treatment (en)">
-				>
-				["at0042"] = <
-					text = <"*1 year after treatment (en)">
-					description = <"*PROM questions completed about patient status around 1 year after treatment (en)">
-				>
-				["at0043"] = <
-					text = <"*2 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 2 years after treatment (en)">
-				>
-				["at0044"] = <
-					text = <"*3 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 years after treatment (en)">
-				>
-				["at0045"] = <
-					text = <"*4 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 4 years after treatment (en)">
-				>
-				["at0046"] = <
-					text = <"*5 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 5 years after treatment (en)">
-				>
-				["at0047"] = <
-					text = <"*Ad-hoc contemporaneous (en)">
-					description = <"*PROM questions completed by the patient at any time about their status now (en)">
-				>
 			>
 		>
 		["nl"] = <
@@ -1374,50 +1183,6 @@ ontology
 				["at0036"] = <
 					text = <"Extra details">
 					description = <"Extra gestructureerde details over de service.">
-				>
-				["at0037"] = <
-					text = <"*Pre-treatment (en)">
-					description = <"*PROM questions completed about patient status before a planned treatment (en)">
-				>
-				["at0038"] = <
-					text = <"*~6 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status shortly after treatment (en)">
-				>
-				["at0039"] = <
-					text = <"*~12 weeks after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 months after treatment (en)">
-				>
-				["at0040"] = <
-					text = <"*~6 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 6 months after treatment (en)">
-				>
-				["at0041"] = <
-					text = <"*~ 9 months after treatment (en)">
-					description = <"*PROM questions completed about patient status around 9 months after treatment (en)">
-				>
-				["at0042"] = <
-					text = <"*1 year after treatment (en)">
-					description = <"*PROM questions completed about patient status around 1 year after treatment (en)">
-				>
-				["at0043"] = <
-					text = <"*2 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 2 years after treatment (en)">
-				>
-				["at0044"] = <
-					text = <"*3 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 3 years after treatment (en)">
-				>
-				["at0045"] = <
-					text = <"*4 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 4 years after treatment (en)">
-				>
-				["at0046"] = <
-					text = <"*5 years after treatment (en)">
-					description = <"*PROM questions completed about patient status around 5 years after treatment (en)">
-				>
-				["at0047"] = <
-					text = <"*Ad-hoc contemporaneous (en)">
-					description = <"*PROM questions completed by the patient at any time about their status now (en)">
 				>
 			>
 		>
